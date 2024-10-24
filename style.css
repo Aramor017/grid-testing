@@ -1,0 +1,144 @@
+/*.final-grid */{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "b b b b"
+    "c c e e"
+    "c c e e"
+    "d d d d"
+    "d d d d"
+    "f f f f";
+    grid-gap: 1rem;
+  } 
+
+ /* @media screen and (min-width: 720px;){ */ .final-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    grid-template-areas:
+    "a a a a"
+    "c b b b"
+    "c b b b"
+    "e b b b"
+    "e b b b"
+    "d d d d"
+    "d d d d"
+    "f f f f";
+    grid-gap: 1rem;
+  } /*}*/
+
+  @media only screen and (max-width:700px){ .final-grid { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "b b b b"
+    "b b b b"
+    "e e c c"
+    "d d d d"
+    "d d d d"
+    "f f f f"
+    ;
+
+  }
+}
+
+
+  .final-grid aside, main, article, section, nav, footer {
+    background-color: aqua;
+    height: 100%;
+    text-align: center;
+    
+
+  
+  }
+
+  aside {
+    grid-area: a;
+    /*grid-column: 1/4;
+    grid-row: 1/4;*/
+  }
+
+  main {
+    grid-area: b;
+    /*grid-column: 4/9;
+    grid-row: 1/2;*/
+  }
+
+ article {
+    grid-area: c;
+    /*grid-column: 4/9;
+    grid-row: 2/5;*/
+  }
+
+  section {
+    grid-area: d;
+    /*grid-column: span 9;
+    grid-row: 5/7;*/
+    background-color: #ffff;
+  }
+
+  nav {
+    grid-area: e;
+  }
+
+  footer {
+    grid-area: f;
+    /*grid-column: span 3;
+    grid-row: 4/5;*/
+  }
+
+  .d {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .div4-child {
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    
+  }
+
+  .div4-child:hover {
+    background-color: purple ;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width:700px) { .d {
+    min-width: 60%; 
+    display: block; 
+  } }
+
+
+  footer {
+    background-color:aliceblue;
+    text-align: center;
+  }
+
+  footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  footer li {
+    list-style-type: none;
+
+  }
+
+  footer li a {
+    text-decoration: none;
+    color:black;
+  }
